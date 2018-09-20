@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <style>
+        .box{
+            width: 400px;
+            height: 30px;
+            border: 1px solid #999;
+            border-radius: 15px;
+            margin: 400px auto;
+        }
+        .tiao{
+            height: 30px;
+            background: #000;
+            border-radius: 15px;
+            
+        }
+        span{
+            width: 40px;
+            height: 40px;
+            line-height: 30px;
+            font-size: 16px;
+            color: #fff;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="tiao">
+            <span id="span"></span>
+        </div>
+    </div>
+    <script>
+        var i=0;
+        function add(i){
+            $('.tiao').css('width',i+"%")
+            $('#span').html(i+"%")
+        }
+        function my(){
+
+		if(i>100){
+
+            return;
+          }
+
+		if(i<=100){
+
+			setTimeout("my()",100)
+            add(i);
+            i++;
+        }
+
+		}
+        $(document).ready(function(){	
+
+		my();
+
+	
+
+	});
+
+    </script>
+    
+</body>
+</html>
