@@ -1,0 +1,141 @@
+@charset "UTF-8";
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font: 12px "微软雅黑", "Arial Narrow", HELVETICA;
+  background: #fff;
+  -webkit-text-size-adjust: 100%; }
+
+a {
+  color: #2d374b;
+  text-decoration: none; }
+
+a:hover {
+  color: #cd0200;
+  text-decoration: underline; }
+
+em {
+  font-style: normal; }
+
+li {
+  list-style: none; }
+
+img {
+  border: 0;
+  vertical-align: middle; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+p {
+  word-wrap: break-word; }
+
+.a1 {
+  height: 5.33333rem;
+  width: 100%;
+  background-image: url(../image/背景.jpg);
+  background-size: 100%; }
+
+.a2 {
+  height: 2rem;
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px solid #cccccc;
+  line-height: 2rem;
+  font-size: 0.48rem;
+  border-top: 1px solid #cccccc;
+  color: #555555;
+  position: relative;
+  font-weight: bold; }
+  .ipt1{
+    height:1.8rem;
+  width: 80%;
+  margin: 0 auto;
+  border:none;
+  line-height: 2rem;
+  font-size: 0.48rem;
+  font-weight: 200;
+
+  outline: none;
+  }
+  input::-webkit-input-placeholder{
+    font-weight: bold;
+  }
+
+.button {
+  height: 0.93333rem;
+  width: 2.66667rem;
+  border: 1px solid #ea4c89;
+  color: #ea4c89;
+  text-align: center;
+  position: absolute;
+  margin-left: 3.33333rem;
+  background: #ffffff;
+  top: 0.6rem;
+  left: 1.2rem;
+  font-size: 0.4rem; }
+
+.a3 {
+  height: 2rem;
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px solid #cccccc;
+  line-height: 2rem;
+  font-size: 0.48rem;
+  font-weight: bold;
+  color: #555555; }
+
+.button2 {
+  width: 80%;
+  height: 1.33333rem;
+  background: #ea4c89;
+  border: #ea4c89;
+  border-radius: 0.66667rem;
+  margin-left: 1.06667rem;
+  margin-top: 0.4rem;
+  font-size: 0.48rem;
+  color: #ffffff; }
+
+.a1 img {
+  margin-left: 75%;
+  width: 2.66667rem; }
+
+.a4 {
+  width: 70%;
+  height: 1.33333rem;
+  line-height: 1.33333rem;
+  margin: 0 auto;
+  color: #999999;
+  text-align: center; }
+
+.a4 p {
+  font-size: 0.48rem;
+  margin-top: 1.33333rem; }
+.ipt{
+font-size: 0.48rem;
+  margin-top: 1.33333rem; 
+  border: 0;
+    height: 1.8rem;
+  width: 80%;
+  margin: 0 auto;
+ 
+  outline: none;
+  }
+
+.p {
+  width: 100%;
+  text-align: center;
+  color: #999999;
+  font-size: 0.4rem;
+  margin-top: 2rem; }
+
+.p span {
+  color: #00b7ee; }
+
+.xx {
+  width: 2.13333rem; }
+
+/*# sourceMappingURL=style.css.map */

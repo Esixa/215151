@@ -1,0 +1,99 @@
+@charset"UTF-8";
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0} 
+body{font:12px"微软雅黑","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;} 
+a{color:#2d374b;text-decoration:none} 
+a:hover{color:#cd0200;text-decoration:underline} 
+em{font-style:normal} 
+li{list-style:none} 
+img{border:0;vertical-align:middle} 
+table{border-collapse:collapse;border-spacing:0} 
+p{word-wrap:break-word} 
+$rem:75;
+$color_pub:#ffffff;
+$color_menu:#555555;
+$color_p:#cccccc;
+.a1{
+    height:400/$rem*1rem;
+    width: 100%;
+    background-image:url(../image/背景.jpg);
+    background-size: 100%
+}
+.a2{
+    height: 150/$rem*1rem;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid $color_p;
+    line-height: 150/$rem*1rem;
+    font-size: 36/$rem*1rem;
+    border-top: 1px solid $color_p;
+    color: $color_menu;
+    font-weight: bold;
+    
+  
+}
+.button{
+    height: 70/$rem*1rem;
+    width: 200/$rem*1rem;
+    border: 1px solid #ea4c89;
+    color: #ea4c89;
+    text-align: center;
+    margin-left: 250/$rem*1rem;
+    background:$color_pub;
+    font-size: 30/$rem*1rem;
+}
+.a3{
+    height: 150/$rem*1rem;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid $color_p;
+    line-height: 150/$rem*1rem;
+    font-size: 36/$rem*1rem;
+    font-weight:bold;
+  
+    color: $color_menu;
+    
+  
+}
+.button2{
+    width: 80%;
+    height: 100/$rem*1rem;
+    background: #ea4c89;
+    border: #ea4c89;
+    border-radius: 50/$rem*1rem;
+    margin-left: 80/$rem*1rem;
+    margin-top: 30/$rem*1rem;
+    font-size: 36/$rem*1rem;
+    color: $color_pub;
+}
+.a1 img{
+   margin-left:75%;
+   width: 200/$rem*1rem;
+   
+}
+.a4{
+    width: 70%;
+    height: 100/$rem*1rem;
+    line-height: 100/$rem*1rem;
+    
+    margin: 0 auto;
+    color: #999999;
+    text-align: center;
+
+}
+.a4 p{
+     font-size: 36/$rem*1rem;
+     margin-top: 100/$rem*1rem;
+}
+.p{
+    width: 100%;
+    text-align: center;
+    color: #999999;
+    font-size: 30/$rem*1rem;
+    margin-top: 150/$rem*1rem;
+}
+.p span{
+    color: #00b7ee;
+}
+.xx{
+    width: 160/$rem*1rem;
+}
