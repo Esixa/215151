@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>侧边栏</title>
+    <link rel="stylesheet" href="cebian.css">
+</head>
+<body>
+    <div class="section" id="bo"></div>
+    <div class="head" id="top">
+    <div class="top">
+        <img src="imgs/logo.png" class="logo">
+        <div class="form">
+            <input type="text" placeholder="钢琴" class="search" id="ipt">
+            <img src="imgs/camera.png" class="camera" id="hui">
+            <img src="imgs/camera2.png" class="camera" id="hong">
+            <button>
+                <img src="imgs/sou.png">
+            </button>
+        </div>
+        
+    </div>
+    
+    <div class="right" id="r2">
+        <div class="yy">
+            <h3>
+                <span>
+                    <img src="imgs/che.png">
+                    
+                </span>
+                <em>购物车</em>
+                <span id="cha"  class="cha" ><img src="imgs/cha.png"></span>
+            </h3>
+            <div class="dl">
+                <span>还没有登录，登录后商品将被保存</span>
+                <a href="">登录</a>
+            </div>
+            <div class="d2">
+                <div class="i"></div>
+                <div class="pp">
+                                              购物车空空的，赶快去挑选心仪的商品吧~
+                                              <p>去首页看看</p>
+
+                </div>
+            </div>
+            <div class="ft">
+                <div class="ft1">
+                    <div class="jt">
+                        <strong>0</strong>
+                        件商品
+                    </div>
+                    <div class="jtc">
+                        共计：
+                        <strong>￥0.00</strong>
+                        <a href="">去购物车结算</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+          
+    <div class="box">
+      
+       
+        <div class="img">
+           <img src="imgs/icon1.png">
+           
+         </div>
+         <div class="open">京东会员</div>
+      
+         <div class="img" id="che">
+            <img src="imgs/icon2.png">
+            
+        </div>
+        <div class="open">购物车</div>
+       
+      
+        <div class="img">
+            <img src="imgs/icon3.png">
+           
+         </div>
+          <div class="open">个人收藏</div>
+       
+    
+         <div class="img">
+            <img src="imgs/icon4.png">
+            
+        </div>
+        <div class="open">我的足迹</div>
+     
+     
+        <div class="img">
+            <img src="imgs/icon5.png">
+            
+         </div>
+         <div class="open">我的消息</div>
+        
+        
+        <div class="img">
+            <img src="imgs/ji.png">
+           
+         </div>
+           <div class="open">咨询JIMI</div>
+        
+        
+        
+        <div class="img">
+            <img src="imgs/icon7.png">
+        
+         </div>
+          <div class="open">反馈</div>
+        
+        
+       
+    </div>
+    <div class="shang" id="shang">
+       
+       
+        <div class="img">
+            <img src="imgs/shang.png">
+            
+        
+         </div>
+          <div class="open">置顶</div>
+         
+    </div>
+    </div>
+ 
+    </div>
+    <script>
+    var topa=document.getElementById('top');
+    window.onscroll=function(){
+        if(window.scrollY<=500){
+            topa.style.top='-50px';
+            topa.style.transition='all .5s';
+
+        }
+        else{
+           topa.style.top='0px';
+            topa.style.transition='all .7s';
+        }
+    }
+    var hong=document.getElementById('hong');
+    var hui=document.getElementById('hui');
+    hui.onmouseover=function(){
+        hong.style.display='block';
+        hui.style.display='none';
+        hong.style.cursor='pointer';
+        hong.style.transition='all .5s';
+    }
+    hong.onmouseleave=function(){
+        hui.style.display='block';
+        hong.style.display='none';
+    }
+    var bb=document.getElementsByClassName('open');
+    var aa=document.getElementsByClassName('img');
+    for(var n=0;n<aa.length;n++){
+        aa[n].index=n;
+        aa[n].onmouseover=function(){
+            for(var i=0;i<bb.length;i++){
+                bb[i].style.left='35px';
+            }
+            bb[this.index].style.left='-60px';
+            bb[this.index].style.background='#c81623';
+        }
+        aa[n].onmouseleave=function(){
+            for(var i=0;i<bb.length;i++){
+                bb[i].style.left='35px';
+            }
+            bb[this.index].style.left='35px';
+            bb[this.index].style.background='#7a6e6e';
+            bb[this.index].style.transition=' left .3s ease-in-out .1s';
+        }
+    } 
+    // 点击一次购物车移出侧边栏，点击二次购物车收起侧边栏
+    var che=document.getElementById('che');
+    var r2=document.getElementById('r2');
+    var l=1;
+    che.onclick=function(){
+        
+       if(l%2==1){
+           l++;
+           r2.style.transition='all .2s '
+          r2.style.right='0px';
+          che.style.background='#c81623';
+       }
+       else{
+           l--;
+           r2.style.transition='all .2s '
+          r2.style.right='-270px';
+         
+       }
+    }
+    // 点击×收起侧边栏
+    var cha=document.getElementById('cha');
+    cha.onclick=function(){
+         r2.style.transition='all .2s '
+        r2.style.right='-270px';
+    }
+    // 返回顶部
+    var shang=document.getElementById('shang');
+    shang.onclick=function(){
+        document.body.scrollTop=0;
+        document.documentElement.scrollTop=0;
+    }
+    // 更改placeholder值
+    var arr=['美的饮水机','西门子冰箱','飞利浦牙刷','游戏主机','显示器'];
+    var ipt=document.getElementById('ipt');
+    setInterval(function(){
+        var m=Math.floor(Math.random()*5);
+    ipt.placeholder=arr[m];
+
+    },5000)
+    // 点击空白区域收起侧边栏
+    var bo=document.getElementById('bo');
+    bo.onclick=function(){
+        if(l%2==0){
+        l++;
+         r2.style.transition='all .2s '
+        r2.style.right='-270px';
+        }
+    }
+
+    
+    </script>
+    
+</body>
+</html>
